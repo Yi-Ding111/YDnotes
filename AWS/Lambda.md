@@ -94,15 +94,15 @@ zip my-deployment.zip lambda_function.py
 ```sh
 cd <current_folder_path>
 
-mkdir cash-rate-deployment-package
+mkdir deployment-package
 
-cd cash-rate-deployment-package
+cd deployment-package
 
 ## copy the python file into current path
-cp ../src/cash_rate_crawler_AU.py .
+cp ../src/crawler.py .
 
 ## rename the current file to lambda_function.py
-mv ./cash_rate_crawler_AU.py ./lambda_function.py
+mv ./crawler.py ./lambda_function.py
 
 mkdir python
 
@@ -125,10 +125,11 @@ zip python.zip lambda_function.py
 ```sh
 cd <current_folder_path>
 
-mkdir cash-rate-deployment-package
+mkdir deployment-package
 
-cd cash-rate-deployment-package
+cd deployment-package
 
+## open a virtural env
 virtualenv myvenv
 
 source myvenv/bin/activate
@@ -137,11 +138,11 @@ pip3 install -r ../src/requirements.txt
 
 cd myvenv/lib/python3.8/site-packages/
 
-zip -r ../../../../cash-rates-deployment.zip .
+zip -r ../../../../deployment.zip .
 
 cd ../../../../
 
-zip cash-rates-deployment.zip lambda_function.py
+zip deployment.zip lambda_function.py
 
 ## deactive the venv
 deactivate
