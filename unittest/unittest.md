@@ -1,5 +1,19 @@
 # UnitTest
 
+A typical <u>**Arrange-Act-Assert**</u> pattern for unit tests:
+
+1. <u>Arrange</u>: Insert test data and construct input.
+2. <u>Act</u>: Execute the function/method to be tested.
+3. <u>Assert</u>: Verify that the output is as expected.
+
+
+
+
+
+
+
+
+
 A testcase is created by subclassing [`unittest.TestCase`](https://docs.python.org/3/library/unittest.html#unittest.TestCase)
 
 ```python
