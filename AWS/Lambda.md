@@ -153,6 +153,8 @@ rm -rf myvenv
 
 
 
+## Cloudwatch logs as Lambda trigger
+
 
 
 
