@@ -30,3 +30,43 @@ function_name() {
 }
 ```
 
+
+
+
+
+## mkdir 
+
+
+
+### -p
+
+```bash
+mkdir -p dir_name
+```
+
+-p 选项确保 dist 所需的任何父目录在不存在时也被创建。
+
+The -p option ensures that any parent directories required for dist are also created if they don't exist.
+
+
+
+
+
+## cp
+
+
+
+### -r
+
+Stand for `recursive`, enable the cp command to copy directories recursively.
+
+```bash
+cp -r /home/user/folder1 /home/user/folder2
+```
+
+会把folder里面所有的子目录和文件全部复制到folder2里面。
+
+All subdirectories and files in folder will be copied to folder2.
+
+
+
